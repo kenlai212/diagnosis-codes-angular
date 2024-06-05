@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: light;
+    src: url(assets/fonts/Manulife_JH_Sans_Optimized_Light.ttf) format("opentype");
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'light', 'arial', sans-serif;
+}

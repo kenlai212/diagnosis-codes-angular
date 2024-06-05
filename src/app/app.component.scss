@@ -1,0 +1,31 @@
+.head{
+    background-color: #00A758;
+    color: #ffffff;
+    display: inline-block;
+    height: 100vh;
+    vertical-align: top;
+    width: 30%;
+    padding:10px;
+}
+
+.head .title{
+    font-size: 2em;
+}
+
+.body{
+    display: inline-block;
+    height: 100vh;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.diagnosisCodeElement{
+    margin-bottom: 20px;
+}
+
+.diagnosisCodeElement .elementTitle{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #00A758;
+    margin-bottom: 5px;
+}
