@@ -1,5 +1,5 @@
 {
-    "/":{
+    "/diagnosis-codes-api":{
         "target":"http://localhost:2828",
         "secure": false
     }

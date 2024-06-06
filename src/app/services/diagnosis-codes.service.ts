@@ -10,7 +10,8 @@ export class DiagnosisCodesService {
     private http: HttpClient
   ) { }
 
-  searchDiagnosisCodes():Observable<any>{
-    return this.http.get('/diagnosis-codes?size=9&page=0');
+  searchDiagnosisCodes(page:number):Observable<any>{
+
+    return this.http.get(`/diagnosis-codes-api/diagnosis-codes?size=9&page=${page.toString()}`);
   }
 }

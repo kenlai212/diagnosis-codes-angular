@@ -3,9 +3,15 @@
     <div class="title">Diagnosis Codes API</div>
   </div>
   <div class="body">
-    <div *ngFor="let element of diagnosisCodesList" class="diagnosisCodeElement">
-      <div class="elementTitle">{{element.code}}</div>
-      <div>{{element.longDesc}}</div>
+    <div class="nav">
+      <div class="previous" (click)="previous()">Previous</div>
+      <div class="next" (click)="next()">Next</div>
+    </div>
+    <div class="elementList">
+      <div *ngFor="let element of diagnosisCodesList" class="diagnosisCodeElement">
+        <div class="elementTitle">{{element.code}}</div>
+        <div>{{element.longDesc}}</div>
+      </div>
     </div>
   </div>
 </div>

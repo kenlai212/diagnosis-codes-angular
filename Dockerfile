@@ -27,5 +27,5 @@ COPY --from=build /usr/local/app/dist/diagnosis-codes-angular /usr/share/nginx/h
 # Copy nginx proxy config
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-# Expose port 80
-EXPOSE 80
+# Expose port 4200
+EXPOSE 4200

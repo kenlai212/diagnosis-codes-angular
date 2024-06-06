@@ -13,10 +13,26 @@ export class AppComponent implements OnInit{
 
   title = 'Diagnosis Code';
   diagnosisCodesList: any;
+  currentPageNumber = 0;
 
   ngOnInit(){
-    this.diagnosisCodesService.searchDiagnosisCodes().subscribe(response => {
-      console.log(response);
+    this.diagnosisCodesService.searchDiagnosisCodes(this.currentPageNumber).subscribe(response => {
+      this.diagnosisCodesList = response.diagnosisCodes; 
+    });
+  }
+
+  next(){
+    this.currentPageNumber++;
+    this.diagnosisCodesService.searchDiagnosisCodes(this.currentPageNumber).subscribe(response => {
+      this.diagnosisCodesList = response.diagnosisCodes; 
+    });
+  }
+
+  previous(){
+    if(this.currentPageNumber > 0)
+    this.currentPageNumber--;
+
+    this.diagnosisCodesService.searchDiagnosisCodes(this.currentPageNumber).subscribe(response => {
       this.diagnosisCodesList = response.diagnosisCodes; 
     });
   }
