@@ -11,7 +11,12 @@ export class DiagnosisCodesService {
   ) { }
 
   searchDiagnosisCodes(page:number):Observable<any>{
+    const url = `/diagnosis-codes-bff/diagnosis-codes?size=9&page=${page.toString()}`;
+    const response = this.http.get(url);
+    return response;
+  }
 
-    return this.http.get(`/diagnosis-codes-api/diagnosis-codes?size=9&page=${page.toString()}`);
+  getDiagnosisCode(id:string):Observable<any>{
+    return this.http.get(`/diagnosis-codes-bff/diagnosis-code/${id}`);
   }
 }

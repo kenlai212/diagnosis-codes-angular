@@ -1,0 +1,27 @@
+.body{
+    display: inline-block;
+    height: 100vh;
+    width: 69%;
+}
+
+.nav{
+    border-bottom: 1px solid lightgray;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #00A758;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.bodyContent{
+    padding:20px;
+}
+
+.bodyContent .code{
+    color: #00A758;
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom:20px;
+}

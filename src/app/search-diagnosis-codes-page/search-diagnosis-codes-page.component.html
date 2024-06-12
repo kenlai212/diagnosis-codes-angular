@@ -1,0 +1,13 @@
+<app-head></app-head>
+<div class="body">
+  <div class="nav">
+    <div class="previous" (click)="previous()">Previous</div>
+    <div class="next" (click)="next()">Next</div>
+  </div>
+  <div class="elementList">
+    <div *ngFor="let element of diagnosisCodesList" class="diagnosisCodeElement" routerLink="/diagnosis-code-details/{{element.id}}">
+      <div class="elementTitle">{{element.code}}</div>
+      <div>{{element.longDesc}}</div>
+    </div>
+  </div>
+</div>

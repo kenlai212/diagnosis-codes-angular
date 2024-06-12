@@ -1,6 +1,6 @@
 {
-    "/diagnosis-codes-api":{
-        "target":"http://localhost:2828",
+    "/diagnosis-codes-bff":{
+        "target":"http://localhost:3001",
         "secure": false
     }
 }
